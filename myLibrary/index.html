@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is where your description goes">
+    <meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<button class="popoutButton" type="button">Add book</button>
+		<div class="popoutForm hidden">
+			<form class="formContainer">
+				<label for="title">Title</label>
+				<input class="newTitle" type="text" name="title" required>
+				<label for="author">Author</label>
+				<input class="newAuthor" type="text" name="author" required>
+				<label for="pages"># of pages</label>
+				<input class="newPages" type="text" name="pages" required>
+				<label for="read">Read/Not Read?</label>
+				<input class="newRead" type="text" name="read" required>
+				<button type="button" class="btn submit">Add Book</button>
+				<button type="button" class="btn cancel">Cancel</button>
+			</form>
+		</div>
+
+		<button class="displayLibrary">Display library</button>
+
+		<table class="library hidden">
+			<thead>
+				<tr><th colspan="4">Library</th></tr>
+			</thead>
+			<tbody>
+				<tr class="index">
+					<td>Title</td>
+					<td>Author</td>
+					<td>Pages</td>
+					<td>Read?</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

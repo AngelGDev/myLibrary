@@ -1,0 +1,41 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.formContainer{
+  display: flex;
+  flex-direction: column;
+
+}
+.newTitle, .newAuthor, .newPages, .newRead, .btn{
+  flex: 1;
+  max-width: 500px;
+}
+.hidden{
+  display: none;
+}
+table{
+  border: 2px solid black;
+}
+th{
+  border: 2px solid black;
+}
+td{
+  border: 2px solid black;
+  margin: 0px;
+  padding: 4px;
+}
