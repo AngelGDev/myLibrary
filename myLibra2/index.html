@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is where your description goes">
+    <meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="buttons">
+			<input type="button" class="btn showLibrary" value="Show/hide library">
+			<input type="button" class="btn addNew" value="Add new book">
+		</section>
+		<section class="popoutForm hidden">
+			<form>
+				<h3>New book</h3>
+				<label for="newTitle">Book title: </label>
+				<input type="text" class="formTitle" name="newTitle" required="required">
+				<label for="newAuthor">Author: </label>
+				<input type="text" class="formAuthor" name="newAuthor" required="required">
+				<label for="newLength"># of pages: </label>
+				<input type="text" class="formLength" name="newLength" required="required">
+				<label for="newReadNotRead">Read/not read yet?</label>
+				<div class="formReadNotRead" name="newReadNotRead">
+					<label for="readStatus">Read</label>
+					<input type="radio" class="formRead" name="readStatus" value="been read" checked required>
+					<label for="notRead">Not read</label>
+					<input type="radio" class="formRead" name="readStatus" value="not been read" required>
+				</div>
+				<div class="formButtons">
+					<input type="button" class="btn submit" value="Submit">
+					<input type="button" class="btn cancel" value="Cancel">
+				</div>
+			</form>
+		</section>
+		<section class="library">
+
+
+
+
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

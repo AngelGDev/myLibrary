@@ -1,0 +1,115 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: fixed;
+}
+.library{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+  background: gray;
+  font-size: 62.5%;
+}
+.hidden{
+  display: none;
+}
+.popoutForm{
+  background: rgba(242,170,97,1);
+  width: 27%;
+  height: 600px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  border: 3px solid black;
+
+}
+h3{
+  font-size: 2rem;
+  margin: 10px;
+}
+form{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: space-between;
+  padding: 20px;
+}
+.formReadNotRead{
+  display: flex;
+  justify-content: space-around;
+}
+.formReadNotRead label{
+  margin-left: 40px;
+}
+.formReadNotRead input{
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.bookCard{
+  border: 3px solid black;
+  width: 400px;
+  height: 250px;
+  background: rgba(242,220,97,1);
+  margin: 20px;
+}
+.bookDetails{
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  color: black;
+}
+li{
+  font-size: 1.5rem;
+}
+.title{
+  font-size: 2rem;
+}
+.author, .length, .read{
+  margin: 3px;
+}
+.cardButtons{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+.btn{
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.formButtons{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+.submit, .cancel{
+  padding:10px;
+}
+.readNotRead, .deleteEntry{
+  align-self: flex-end;
+  padding: 10px;
+}
+.showLibrary, .addNew{
+  margin: 5px;
+  padding: 5px;
+}
